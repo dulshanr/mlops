@@ -1,0 +1,15 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Downloaded model artifacts and Hugging Face caches
+.model_cache/
+_hf_download/
+.cache/huggingface/
