@@ -21,16 +21,9 @@ Create the environment and install the locked dependencies:
 uv sync
 ```
 
-Start a local MLflow server in a separate terminal. This command stores tracking
-metadata in `mlflow.db` and artifacts in `mlartifacts/`:
+Start ML flow in docker using docker compose
 
-```bash
-uv run mlflow server \
-  --host 127.0.0.1 \
-  --port 5001 \
-  --backend-store-uri sqlite:///mlflow.db \
-  --default-artifact-root ./mlartifacts
-```
+https://github.com/mlflow/mlflow/blob/master/docker-compose/README.md
 
 Open the MLflow UI at <http://127.0.0.1:5001>.
 
